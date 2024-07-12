@@ -1,4 +1,4 @@
-###-------------------- Modelo Preditivo da Extrema Pobreza -----------------------------
+###-------------------- Analise da Extrema Pobreza -----------------------------
 ### Gera resultados do modelo de regressao da extrema pobreza
 ### AUTOR: ADRIANO NETO, EM 28/01/2022, Alterado em 09/06/2024
 
