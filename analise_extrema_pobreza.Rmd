@@ -7,22 +7,27 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-library(tidyverse)
-library(readxl)
-library(dplyr)
-library(stringr)
-library(wooldridge)
-library(lmtest)
-library(faraway)
-library(stargazer)
-library(ggplot2)
-library(tseries)
-library(car)
-library(corrplot)
-library(PerformanceAnalytics)
-library(caret)
-library(glmnet)
-library(boot)
+# Carrega/instala os pacotes
+pacotes = c(
+  "tidyverse", "readxl", "dplyr", "stringr", "wooldridge",
+  "lmtest", "ggplot2", "faraway", "stargazer", "randomForest",
+  "car", "tseries", "boot", "corrplot", "PerformanceAnalytics", 
+  "caret", "rmarkdown", "glmnet", "neuralnet", "e1071", "gbm", "rpart",
+  "httr", "jsonlite"
+)
+
+
+# Instala pacotes que ainda não estão instalados
+for (x in pacotes) {
+  if (!x %in% installed.packages()) {
+    install.packages(x, repos = "http://cran.us.r-project.org")
+  }
+}
+
+# Carrega os pacotes
+lapply(pacotes, require, character.only = TRUE)
+rm(pacotes, x)
+
 ```
 
 ###-------------------- Analise Extrema Pobreza -----------------------------
