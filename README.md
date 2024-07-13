@@ -360,7 +360,7 @@ dentro deste modelo, esses fatores não têm um impacto significativo na percent
 
 # Conclusão
 
-## Insights e implicacoes em politicas publicas
+## Insights e implicações em politicas publicas
 
 Alguns direcionamentos que podemos inferir é a necessidade de politicas rurais de desenvolvimento, dado a relaçao encontrada
 entre populaçao rural e o percentual de pessoas em extrema pobreza, políticas focadas nesse grupo podem trazer melhorias de bem estar
