@@ -360,15 +360,15 @@ dentro deste modelo, esses fatores não têm um impacto significativo na percent
 
 # Conclusão
 
-## Insights e implicações em politicas publicas
+## Insights e implicações em políticas públicas
 
 Alguns direcionamentos que podemos inferir é a necessidade de politicas rurais de desenvolvimento, dado a relaçao encontrada
 entre populaçao rural e o percentual de pessoas em extrema pobreza, políticas focadas nesse grupo podem trazer melhorias de bem estar
 no campo, tendo em vista a diminuicao da extrema pobreza nos municipios do estado do ceará. No entanto, quando falamos sobre educação
 foi possivel notar a extrema necessidade da boas taxas de alfabetizacao podendo ter efeitos muito positivos sobre o percentual de pessoas
 em extrema pobreza, mas é interessante ressaltar que apenas a presenca alta em todas as etapas estudantis nao demonstraram ter nenhuma
-efeito significativo na redução da extrema pobreza, o que pode indicar por um lado onde a qualidade da educacao ofertada e a  oferta de oportunidade
-de educacao  e manuntencao de boas taxas alfabetizacao possam surtir efeitos positivos na redução da extrema pobreza. Em relacao ao desenvolvimento
+efeito significativo na redução da extrema pobreza, o que pode indicar por um lado onde a qualidade da educação ofertada e a  oferta de oportunidade
+de educação  e manuntencao de boas taxas alfabetizacao possam surtir efeitos positivos na redução da extrema pobreza. Em relacao ao desenvolvimento
 econômico podemos evidenciar o forte impacto do crescimento econômico e aumento do pib per capita na redução da extrema pobreza, mas claro tambem
 dando mesma importancia na distribuicao mais equitaria dos recursos gerados em excedente. Acerca dos setores de emprego analisados demonstrou uma necessidade
 da geracao de empregos de qualidade e foco em empregabilidade formal, dado que possa ocorrer o contrario no campo e regioes mais ruralizadas e menos populosas,
