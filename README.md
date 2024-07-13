@@ -1,4 +1,5 @@
-# Análise das perspectivas da extrema pobreza no Ceará
+# ANÁLISE DOS DETERMINANTES DA EXTREMA POBREZA NO CEARÁ
+
 # INTRODUÇÃO
 
 Na economia o tema pobreza é discutido incansavelmente, dada sua importância e relevânte influência no bem-estar social de uma população. Nos cenários onde os pesquisadores buscam entender o fenômeno da pobreza e como ocorre em uma determinada região, é necesssário abarcar indicadores que simulem a realidade do contexto inserido desses povos. Tendo em vista isso essa análise faz uso dos dados referentes a população de 184 municípios do estado do Ceará. A análise busca entender as condições da pobreza espacial da região. A análise consistiu no uso de inferência econométrica com modelo de regressão linear multipla, além de testes análisando a violação de premissas do modelo, com testes de multicolinearidade, heterocedasticidade, normalidade de resíduos e autocorrelação entre as variáveis. Da experiência internacional é consenso a realidade da pobreza no Brasil, tendo vista o grau de desenvolvimento emergente do país (IPECE, 2010).
@@ -21,17 +22,225 @@ Os dados oriundos do Censo de 2010 obtidos através do Atlas do Desenvolvimento 
 
 
 ## Resumo das variáveis:
-- PER_EXTPOBRE_2010 = porcentagem de pessoas em extrema pobreza; 
-- POP_R2010 = população rural; 
-- RDEP_2010 = razão de dependência; 
-- TX_ANALF2010 = taxa de analfabetismo para indivíduos com 18 anos ou mais de idade; 
-- RPC_2010 = renda per capita; 
-- O subscrito i indica os 184 municípios cearenses;
-- Ano referente as observações, onde t = 2010.
-	
 
-## Hipóteses levantadas
-É esperado relação positiva entre a % de pessoas extremamente pobres, taxa de analfabetismo e população rural. Dessa forma, com incrementos na taxa de analfabetismo e população rural, tenha-se um aumento na % de pessoas extremamente pobres. O sinal esperado para a relação renda per capita, razão de dependência e a % de extremamente pobres é negativa. Ou seja, espera-se que com um aumento na renda per capita e razão de dependência haja redução na porcentagem de pessoas extremamente pobres.
+- PERC_EXT_POB = porcentagem de pessoas em extrema pobreza.
+- PERC_OC_AGRO = porcentagem de ocupação no setor agropecuário;
+- PERC_OC_COMERC = porcentagem de ocupação no setor comercial;
+- PERC_OC_SERV = porcentagem de ocupação no setor de serviços;
+- ESP_VIDA_NSC = esperança de vida ao nascer;
+- POP_RURAL = população rural;
+- RAZ_DEP = razão de dependência;
+- TX_ANAF = taxa de analfabetismo;
+- FREQ_PRE_ESC = frequência escolar na educação pré-escolar;
+- FREQ_FUND = frequência escolar no ensino fundamental;
+- FREQ_MED = frequência escolar no ensino médio;
+- PIB_PC = PIB per capita;
+O subscrito i indica os 184 municípios cearenses.
+Ano referente às observações, onde t = 2010.
+
+# Análise Exploratória
+
+## Medidas de Tendência Central
+
+### - Média:
+```
+- perc_oc_agro:    38.18
+- perc_oc_comerc:  11.43
+- perc_oc_serv:    31.62
+- esp_vida_nsc:    70.67
+- pop_rural:       11570.44
+- raz_dep:         56.61
+- tx_anaf:         27.28
+- freq_pre_esc:    71.93
+- freq_fund:       112.89
+- freq_med:        65.44
+- pib_pc:          267.63
+- perc_ext_pob:    23.47
+```
+### - Mediana:
+
+### - Desvio Padrão:
+```
+Variáveis com alto desvio padrão:
+
+pop_rural (8026.416192) e pib_pc (62.801544) têm desvios padrão elevados,
+indicando alta variabilidade nos valores dessas variáveis.
+
+Variáveis com desvio padrão moderado:
+
+perc_oc_agro (12.653409), freq_pre_esc (16.782602), e freq_med (10.671560)
+apresentam desvios padrão moderados, sugerindo variação considerável, mas não extrema.
+
+Variáveis com baixo desvio padrão:
+
+perc_oc_comerc (3.375366), perc_oc_serv (5.523187), esp_vida_nsc (1.288314),
+raz_dep (5.305458), tx_anaf (5.342230), freq_fund (4.869921), e perc_ext_pob (8.659658) têm desvios padrão menores,
+indicando menor variação nos valores dessas variáveis.
+```
+### Quartis:
+
+## Outliers
+
+### Resumo dos resultados:
+
+Com p-valor menor que 0,05, rejeita-se a hipótese nula. Portanto, são de fato outliers:
+```
+- perc_oc_comerc: 27.38
+- perc_oc_serv: 51.55
+- pop_rural: 49156
+- tx_anaf: 6.94
+- freq_fund: 136.07
+- pib_pc: 846.36
+```
+
+## Distribuição das variáveis
+![image](https://github.com/user-attachments/assets/d24ad2e3-3faa-48d4-a72a-b95188a9348a)
+
+### - Expectativa de Vida ao Nascer:  
+```
+A distribuição é aproximadamente normal com um pico em torno de 71 anos.
+A densidade diminui dos dois lados do pico, indicando menos variabilidade em valores extremos.
+```
+### - Frequência no Ensino Fundamental: 
+```
+A distribuição é levemente assimétrica para a direita, com um pico em torno de 112.
+Há uma menor frequência de valores muito baixos ou muito altos.
+```
+### - Frequência no Ensino Médio:
+```
+A distribuição é aproximadamente normal, centrada em torno de 63.
+A densidade é bem distribuída com um leve aumento na cauda direita.
+```
+### - Frequência na Pré-Escola:
+```
+A distribuição é bimodal, com picos em torno de 65 e 85.
+Há uma menor frequência de valores extremos.
+```
+### - Percentual de Extrema Pobreza:
+```
+A distribuição é aproximadamente normal com um pico em torno de 25.
+A densidade é distribuída simetricamente ao redor do pico.
+```
+### - Percentual de Ocupação na Agricultura:
+```
+A distribuição é levemente assimétrica para a direita, com um pico em torno de 20.
+Há uma menor frequência de valores muito altos.
+```
+### - Percentual de Ocupação no Comércio:
+```
+A distribuição é aproximadamente normal com um pico em torno de 10.
+A densidade diminui dos dois lados do pico.
+```
+### - Percentual de Ocupação nos Serviços:
+```
+A distribuição é aproximadamente normal com um pico em torno de 30.
+A densidade é bem distribuída com menos valores extremos.
+```
+### - PIB per capita:
+```
+A distribuição é assimétrica para a direita, com a maioria dos valores concentrados abaixo de 1000.
+Há alguns valores extremos muito altos, indicando desigualdade.
+```
+### - População Rural:
+```
+A distribuição é extremamente assimétrica para a direita.
+A maioria dos valores está concentrada abaixo de 50.000, mas há valores extremos muito altos.
+```
+### - Razão de Dependência:
+```
+A distribuição é aproximadamente normal com um pico em torno de 55.
+A densidade diminui dos dois lados do pico, indicando variabilidade em valores extremos.
+```
+### - Taxa de Analfabetismo:
+```
+A distribuição é aproximadamente normal com um pico em torno de 25.
+A densidade diminui dos dois lados do pico.
+```
+## Matrizes de correlação
+
+![image](https://github.com/user-attachments/assets/453e7925-c5c8-403f-b3b6-8506360572c4)
+
+## 1 - Correlações positivas:
+
+## tx_anaf e raz_dep
+Correlação entre as duas variaveis no patamar de 0.74, indicando assim uma forte correlacao.
+Em outras palavras, a medida que a taxa de analfabetismo aumenta, a razao de dependência
+tambem tende a aumentar. Entao municipios e regioes com maiores taxas de analfabetismo tbm tem maior razao
+de dependencia
+
+## perc_oc_agro e tx_anaf
+Correlação entre essas variaveis foi no patamar de 0.74 tambem, indicando uma forte correlacao.
+Em outras palavras, o percentual de ocupados no setor agropecuario  demonstra grande influência
+em uma maior taxa de analfabetismo. Creio que isso tenha a ver com o fato do trabalho rural haver
+maior concentracao de mao de obra menos especializada.
+
+## perc_ext_pob e tx_anaf
+Correlação entre essas variaveis demonstrou um valor de 0.79, ou seja, a taxa de analfabetismo tende
+a aumentar quando o percentual de pessoas em extrema pobreza aumenta.
+
+## perc_ext_pob e raz_dep
+Outro par de variaveis que demonstrou altissima Correlação que um maior percentual de pessoas em extrema pobreza
+está associada a uma maior razão de dependencia.
+
+## 2 - Correlações negativas:
+
+## perc_ext_pob e pib_pc
+Correlação de -0.8 demonstrando forte relacao, indicando que a medida que o pib per capita aumenta o percentual de pessoas em extrema
+pobreza tende a diminuir consideravelmente.
+
+## perc_oc_comerc e perc_oc_agro
+Correlação negativamente moderada com -0.59, sao duas variaveis em sentidos opostos entao ísso indica tbm na correlacao que percentual de ocupacao
+no setor agropecuario tende a diminuir a medida que o percentual de ocupacao do setor comercial aumenta.
+
+## esp_vida_nsc e perc_oc_agro
+Correlação negativa moderada de -0.44, indicando que ha uma relacao inversa, ou seja, a esperanca de vida ao nascer tende a aumentar com
+um menor percentual de ocupacao no setor agropecuario. Ou seja, pode denotar que regioes mais dependende do setor agropecuario tendem a ter
+menos esperanca de vida ao nascer nos municipios cearenses.
+
+## pib_pc e raz_dep
+Correlação negativa moderadamente forte de -0.65, indicando que a razao de dependência diminui a medida que o pib per capita aumenta.
+
+## pib_pc e tx_anaf
+Correlação negativa moderadamente forte de -0.73, indicativo que a medida que pib per capita aumenta a taxa de analfabetismo diminui.
+
+# tx_anaf e esp_vida_nsc
+Correlação negativa relativamente forte de -0.47, denotando uma possivel relacao. Onde, municipios com maiores taxas de analfabetismo
+tendem a ter menor esperanca de vida ao nascer.
+
+# Testes Estatísticos de Diagnóstico
+
+## Teste de Confirmação de outliers
+```
+outlierTest(model_ext)
+```
+Esse teste confirma a observacao 59 (Fortaleza - Capital) como outlier significativo, portanto a observação foi removida da base
+de dados. Remoção essa que melhorou a acurária do modelo levemente. 
+
+## Teste de Normalidade da Distribuição
+```
+shapiro.test(residuals(model_ext))
+```
+p-valor > 0.05 portanto nao rejeitamos a hipotese nula de normalidade da distruicao
+
+## Teste de Heterocedasticidade
+```
+bptest(model_ext)
+```
+p-valor > 0.05 portanto nao reijeitamos a hipotese nula de homocedasticidade ( variancia constante )
+
+## Teste de Autocorrelação
+```
+dwtest(model_ext)
+```
+p-valor > 0.05 portanto nao rejeitamos a hipotese nula de que nao ha autocorrelacao.
+
+## Teste de multicolinearidade
+```
+vid_lm <- vif(model_ext)
+print(vid_lm)
+```
+Analisando os resultados do VIF podemos notar que todos os resultados sao abaixos de 5, ou seja,
+muito inferiores a 10. Portanto, nao temos problema com multicolinearidade no modelo.
 
 # RESULTADOS
 
@@ -39,28 +248,132 @@ Os resultados foram divididos em duas subdivisões, sendo elas: Estatística des
 
 Tabela 1 – Estatística descritiva das variáveis utilizadas na regressão.
 
-![image](https://github.com/adrianomsn/analise_extrema_pobreza/assets/170030446/7b2d2b3b-6938-46fe-9da5-351b333d6813)
-
+```
+perc_oc_agro   perc_oc_comerc   perc_oc_serv    esp_vida_nsc     pop_rural        raz_dep         tx_anaf       freq_pre_esc      freq_fund        freq_med    
+ Min.   : 0.80   Min.   : 4.09   Min.   :17.37   Min.   :67.56   Min.   :  252   Min.   :41.16   Min.   : 6.94   Min.   : 31.79   Min.   :100.8   Min.   :36.48  
+ 1st Qu.:30.90   1st Qu.: 9.23   1st Qu.:27.34   1st Qu.:69.89   1st Qu.: 5948   1st Qu.:52.99   1st Qu.:24.26   1st Qu.: 60.32   1st Qu.:110.0   1st Qu.:58.38  
+ Median :40.27   Median :10.82   Median :31.50   Median :70.63   Median : 9372   Median :56.69   Median :28.05   Median : 72.51   Median :112.6   Median :65.45  
+ Mean   :38.19   Mean   :11.44   Mean   :31.63   Mean   :70.67   Mean   :11570   Mean   :56.61   Mean   :27.28   Mean   : 71.93   Mean   :112.9   Mean   :65.45  
+ 3rd Qu.:47.77   3rd Qu.:13.36   3rd Qu.:34.66   3rd Qu.:71.50   3rd Qu.:14556   3rd Qu.:60.39   3rd Qu.:30.55   3rd Qu.: 84.64   3rd Qu.:115.5   3rd Qu.:72.42  
+ Max.   :62.65   Max.   :27.38   Max.   :51.55   Max.   :74.93   Max.   :49156   Max.   :68.10   Max.   :39.98   Max.   :119.33   Max.   :136.1   Max.   :94.94  
+     pib_pc       perc_ext_pob  
+ Min.   :171.6   Min.   : 3.36  
+ 1st Qu.:221.1   1st Qu.:17.64  
+ Median :258.6   Median :23.51  
+ Mean   :267.6   Mean   :23.48  
+ 3rd Qu.:287.8   3rd Qu.:30.12  
+ Max.   :846.4   Max.   :43.63  
+ ``` 
 Tabela 2 – Resultados do modelo econométrico.
+```
+Resultados da Regressão
+===============================================
+                        Dependent variable:    
+                    ---------------------------
+                         log(perc_ext_pob)     
+                               model           
+-----------------------------------------------
+log(pop_rural)                0.072***          
+                              (0.019)                                                         
+log(raz_dep)                  0.823***          
+                              (0.176)                                                      
+log(tx_anaf)                  0.515***          
+                              (0.108)                                                        
+log(pib_pc)                   -0.987***         
+                              (0.103)                                                        
+log(esp_vida_nsc)             -0.141           
+                              (0.748)                                                       
+log(perc_oc_agro)             0.194***          
+                              (0.045)                                                       
+log(perc_oc_comerc)           0.108*           
+                              (0.056)                                                        
+log(perc_oc_serv)             0.239***          
+                              (0.083)                                                        
+log(freq_pre_esc)             -0.034           
+                              (0.051)                                                        
+log(freq_fund)                -0.130           
+                              (0.293)                                                        
+log(freq_med)                 -0.016           
+                              (0.077)                                                        
+Constant                       2.546           
+                              (3.544)                                                        
+-----------------------------------------------
+Observations                    186            
+R2                             0.878           
+Adjusted R2                    0.870           
+Residual Std. Error      0.161 (df = 174)      
+F Statistic          113.979*** (df = 11; 174) 
+===============================================
+Note:               *p<0.1; **p<0.05; ***p<0.01
+```
 
-![image](https://github.com/adrianomsn/analise_extrema_pobreza/assets/170030446/e9f81c09-4487-4bc6-bf6c-547cb76b5b9c)
+#   Interpretacao dos resultados do modelo 
+
+## Resultado das variáveis explicativas individualmente em relacao a variavel dependente
+
+# Variveis significativas:
+
+## 1 - População rural: 0.072, p < 0.01
+Um aumento de 1% na população rural está associado a um aumento de 0.072% na percentagem de extrema pobreza, mantendo outras variáveis constantes.
+
+## 2 - Razão de dependência: 0.823, p < 0.01
+Um aumento de 1% na razão de dependência está associado a um aumento de 0.823% na percentagem de extrema pobreza, mantendo outras variáveis constantes.
+
+## 3 - Taxa de Analfabetismo: 0.515, p < 0.01
+Um aumento de 1% na taxa de analfabetismo está associado a um aumento de 0.515% na percentagem de extrema pobreza, mantendo outras variáveis constantes.
+
+## 4 - PIB per capita: -0.987, p < 0.01
+Um aumento de 1% no PIB per capita está associado a uma diminuição de 0.987% na percentagem de extrema pobreza, mantendo outras variáveis constantes.
+
+## 5 - Percentual de ocupaçao no setor agropecuário: 0.194, p < 0.01
+Um aumento de 1% na percentual de ocupação no setor agropecuário está associado a um aumento de 0.194% na percentagem de extrema pobreza, mantendo outras variáveis constantes.
+
+## 6 - Percentual de ocupação no setor de serviços: 0.239, p < 0.01
+Um aumento de 1% na percentual de ocupação no setor de serviços está associado a um aumento de 0.239% na percentagem de extrema pobreza, mantendo outras variáveis constantes.
+
+ 
+# Variaveis nao significativas:
+
+- esp_vida_nsc: -0.141, p > 0.1
+- perc_oc_comerc: 0.064, p > 0.1
+- freq_pre_esc: -0.051, p > 0.1
+- freq_fund:-0.011, p > 0.1
+- freq_med: -0.011, p > 0.1
+- intercepto: 2.388, p > 0.1
+
+Todas as variáveis acima nao tiveram efeito significativo no percentual de pessoas em extrema pobreza.
 
 
-As variáveis analisadas em sua maioria se comportam como esperado, exceto pela razão de dependência, na qual esperava-se uma relação inversa entre esta e a % de extremamente pobres. Contudo, o modelo demonstrou relação direta entre as variáveis.
-## Taxa de analfabetismo
-A taxa de analfabetismo, afeta de forma positiva a variável dependente. O aumento de 1% na taxa de analfabetismo aumenta em 0,834% a variável dependente.
-## População rural
-A população rural afeta de forma positiva a variável dependente. O aumento de 1% na população rural aumenta em 0,078% o percentual de extremamente pobres. Evidenciando o já afirmado por Albuquerque e Cunha (2012) de que a pobreza extrema é mais presente no ambiente rural do Brasil.
-## Razão de dependência
-Existe relação positiva entre a razão de dependência e a variável dependente, onde vemos que, um aumento de 1% na taxa de dependência aumenta em 0,818% o percentual de pessoas em extrema pobreza. Correlação esta que também foi noticiada por Zaranza, ao observar que pessoas mais pobres tendem a ter prole mais numerosa, o que resulta no aumento da razão de dependência. 
-## Renda per capita
-Existe relação negativa entre extrema pobreza e a renda per capita. Ou seja, temos que com o aumento de 1% na renda per capita acaba por reduzir a extrema pobreza em 0,9%. Considerando o aumento da renda como crescimento econômico, o resultado encontrado por Barros e Mendonça (1997), de que qualquer crescimento econômico pode de alguma forma favorecer os pobres.
-## Intercepto
-Sobre o intercepto da regressão, nada podemos afirmar dado que o seu resultado se mostrou insignificante estatisticamente para ∝ = 1%, 5% e 10%. O modelo apresenta  significância global (p-valor<0,05 segundo o teste F) além do elevado grau de ajuste com cerca de 84,8% das seu repressores explicando as variações na porcentagem de pessoas em extrema pobreza para os municípios do Ceará no ano de 2010.
+## Interpretacao geral:
 
+- O modelo de regressão log-log apresentou um ajuste muito bom aos dados, com um R² ajustado de 0.869,
+indicando que aproximadamente 87,88% da variação em log(perc_ext_pob) é explicada pelas variáveis independentes do modelo.
 
-# CONCLUSÃO
-De acordo com as informações obtidas, as variáveis explicativas utilizadas demonstraram um efeito sobre a população em extrema pobreza no estado do Ceará. Variáveis essas em sua maioria de caráter demográfico e socioeconômico, o que poderá servir de insumo para guiar políticas públicas focalizadas para intervir em aspectos dos municípios cearenses guiados por esta análise. E dessa forma, podendo promover mudançar e políticas mais impactantes visando o aumento do desenvolvimento socioeconômico e do bem-estar geral.
+- As variáveis mais significativas (p < 0.01) que afetam a percentagem de extrema pobreza são log(pop_rural), log(raz_dep),
+log(tx_anaf), log(pib_pc), log(perc_oc_agro) e log(perc_oc_serv). Isso sugere que a população rural, a razão de dependência,
+a taxa de analfabetismo, o PIB per capita, a ocupação no setor agropecuário e a ocupação no setor de serviços são fatores
+cruciais para a determinação da extrema pobreza.
+
+- Algumas variáveis, como a esperança de vida ao nascer, a percentagem de ocupação no comércio, a frequência pré-escolar,
+a frequência no ensino fundamental e a frequência no ensino médio, não mostraram significância estatística, indicando que,
+dentro deste modelo, esses fatores não têm um impacto significativo na percentagem de extrema pobreza.
+
+# Conclusão
+
+## Insights e implicacoes em politicas publicas
+
+# Alguns direcionamentos que podemos inferir é a necessidade de politicas rurais de desenvolvimento, dado a relaçao encontrada
+# entre populaçao rural e o percentual de pessoas em extrema pobreza, políticas focadas nesse grupo podem trazer melhorias de bem estar
+# no campo, tendo em vista a diminuicao da extrema pobreza nos municipios do estado do ceará. No entanto, quando falamos sobre educação
+# foi possivel notar a extrema necessidade da boas taxas de alfabetizacao podendo ter efeitos muito positivos sobre o percentual de pessoas
+# em extrema pobreza, mas é interessante ressaltar que apenas a presenca alta em todas as etapas estudantis nao demonstraram ter nenhuma
+# efeito significativo na reducao da extrema pobreza, o que pode indicar por um lado onde a qualidade da educacao ofertada e a  oferta de oportunidade
+# de educacao  e manuntencao de boas taxas alfabetizacao possam surtir efeitos positivos na reducao da extrema pobreza. Em relacao ao desenvolvimento
+# economico podemos evidenciar o forte impacto do crescimento economico e aumento do pib per capita na reducao da extrema pobreza, mas claro tambem
+# dando mesma importancia na distribuicao mais equitaria dos recursos gerados em excedente. Acerca dos setores de emprego analisados demonstrou uma necessidade
+# da geracao de empregos de qualidade e foco em empregabilidade formal, dado que possa ocorrer o contrario no campo e regioes mais ruralizadas e menos populosas,
+# entao o desenvolvimento desses setores possam gerar mais empregos, mas tambem reduzir a extrema pobreza.
+
 
 
 
