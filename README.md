@@ -165,7 +165,7 @@ A densidade diminui dos dois lados do pico.
 ## tx_anaf e raz_dep
 Correlação entre as duas variaveis no patamar de 0.74, indicando assim uma forte correlacao.
 Em outras palavras, a medida que a taxa de analfabetismo aumenta, a razao de dependência
-tambem tende a aumentar. Entao municipios e regioes com maiores taxas de analfabetismo tbm tem maior razao
+tambem tende a aumentar. então municipios e regioes com maiores taxas de analfabetismo tbm tem maior razao
 de dependencia
 
 ## perc_oc_agro e tx_anaf
@@ -189,7 +189,7 @@ Correlação de -0.8 demonstrando forte relacao, indicando que a medida que o pi
 pobreza tende a diminuir consideravelmente.
 
 ## perc_oc_comerc e perc_oc_agro
-Correlação negativamente moderada com -0.59, sao duas variaveis em sentidos opostos entao ísso indica tbm na correlacao que percentual de ocupacao
+Correlação negativamente moderada com -0.59, sao duas variaveis em sentidos opostos então ísso indica tbm na correlacao que percentual de ocupacao
 no setor agropecuario tende a diminuir a medida que o percentual de ocupacao do setor comercial aumenta.
 
 ## esp_vida_nsc e perc_oc_agro
@@ -307,7 +307,7 @@ F Statistic          113.979*** (df = 11; 174)
 Note:               *p<0.1; **p<0.05; ***p<0.01
 ```
 
-#   Interpretacao dos resultados do modelo 
+#   Interpretação dos resultados do modelo 
 
 ## Resultado das variáveis explicativas individualmente em relacao a variavel dependente
 
@@ -329,7 +329,7 @@ Um aumento de 1% no PIB per capita está associado a uma diminuição de 0.987% 
 Um aumento de 1% na percentual de ocupação no setor agropecuário está associado a um aumento de 0.194% na percentagem de extrema pobreza, mantendo outras variáveis constantes.
 
 ## 6 - Percentual de ocupação no setor de serviços: 0.239, p < 0.01
-Um aumento de 1% na percentual de ocupação no setor de serviços está associado a um aumento de 0.239% na percentagem de extrema pobreza, mantendo outras variáveis constantes.
+um aumento de 1% na percentual de ocupação no setor de serviços está associado a um aumento de 0.239% na percentagem de extrema pobreza, mantendo outras variáveis constantes.
 
  
 # Variaveis nao significativas:
@@ -344,7 +344,7 @@ Um aumento de 1% na percentual de ocupação no setor de serviços está associa
 Todas as variáveis acima nao tiveram efeito significativo no percentual de pessoas em extrema pobreza.
 
 
-## Interpretacao geral:
+## Interpretação geral:
 
 - O modelo de regressão log-log apresentou um ajuste muito bom aos dados, com um R² ajustado de 0.869,
 indicando que aproximadamente 87,88% da variação em log(perc_ext_pob) é explicada pelas variáveis independentes do modelo.
@@ -362,17 +362,17 @@ dentro deste modelo, esses fatores não têm um impacto significativo na percent
 
 ## Insights e implicacoes em politicas publicas
 
-# Alguns direcionamentos que podemos inferir é a necessidade de politicas rurais de desenvolvimento, dado a relaçao encontrada
-# entre populaçao rural e o percentual de pessoas em extrema pobreza, políticas focadas nesse grupo podem trazer melhorias de bem estar
-# no campo, tendo em vista a diminuicao da extrema pobreza nos municipios do estado do ceará. No entanto, quando falamos sobre educação
-# foi possivel notar a extrema necessidade da boas taxas de alfabetizacao podendo ter efeitos muito positivos sobre o percentual de pessoas
-# em extrema pobreza, mas é interessante ressaltar que apenas a presenca alta em todas as etapas estudantis nao demonstraram ter nenhuma
-# efeito significativo na reducao da extrema pobreza, o que pode indicar por um lado onde a qualidade da educacao ofertada e a  oferta de oportunidade
-# de educacao  e manuntencao de boas taxas alfabetizacao possam surtir efeitos positivos na reducao da extrema pobreza. Em relacao ao desenvolvimento
-# economico podemos evidenciar o forte impacto do crescimento economico e aumento do pib per capita na reducao da extrema pobreza, mas claro tambem
-# dando mesma importancia na distribuicao mais equitaria dos recursos gerados em excedente. Acerca dos setores de emprego analisados demonstrou uma necessidade
-# da geracao de empregos de qualidade e foco em empregabilidade formal, dado que possa ocorrer o contrario no campo e regioes mais ruralizadas e menos populosas,
-# entao o desenvolvimento desses setores possam gerar mais empregos, mas tambem reduzir a extrema pobreza.
+Alguns direcionamentos que podemos inferir é a necessidade de politicas rurais de desenvolvimento, dado a relaçao encontrada
+entre populaçao rural e o percentual de pessoas em extrema pobreza, políticas focadas nesse grupo podem trazer melhorias de bem estar
+no campo, tendo em vista a diminuicao da extrema pobreza nos municipios do estado do ceará. No entanto, quando falamos sobre educação
+foi possivel notar a extrema necessidade da boas taxas de alfabetizacao podendo ter efeitos muito positivos sobre o percentual de pessoas
+em extrema pobreza, mas é interessante ressaltar que apenas a presenca alta em todas as etapas estudantis nao demonstraram ter nenhuma
+efeito significativo na redução da extrema pobreza, o que pode indicar por um lado onde a qualidade da educacao ofertada e a  oferta de oportunidade
+de educacao  e manuntencao de boas taxas alfabetizacao possam surtir efeitos positivos na redução da extrema pobreza. Em relacao ao desenvolvimento
+econômico podemos evidenciar o forte impacto do crescimento econômico e aumento do pib per capita na redução da extrema pobreza, mas claro tambem
+dando mesma importancia na distribuicao mais equitaria dos recursos gerados em excedente. Acerca dos setores de emprego analisados demonstrou uma necessidade
+da geracao de empregos de qualidade e foco em empregabilidade formal, dado que possa ocorrer o contrario no campo e regioes mais ruralizadas e menos populosas,
+então o desenvolvimento desses setores possam gerar mais empregos, mas tambem reduzir a extrema pobreza.
 
 
 
