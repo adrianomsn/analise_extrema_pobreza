@@ -1,6 +1,6 @@
 ###-------------------- Determinantes da Extrema Pobreza -----------------------------
 ### Gera analise de regressao da extrema pobreza
-### AUTOR: ADRIANO NETO, EM 28/01/2022, Alterado em 09/06/2024
+### AUTOR: ADRIANO NETO
 
 ### OBJETIVO: 
 
