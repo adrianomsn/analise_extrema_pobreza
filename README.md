@@ -216,23 +216,23 @@ A densidade diminui dos dois lados do pico.
 ## 1 - Correlações positivas:
 
 ## tx_anaf e raz_dep
-Correlação entre as duas variaveis no patamar de 0.74, indicando assim uma forte correlacao.
+Correlação entre as duas variáveis no patamar de 0.74, indicando assim uma forte correlacao.
 Em outras palavras, a medida que a taxa de analfabetismo aumenta, a razao de dependência
 tambem tende a aumentar. então municipios e regioes com maiores taxas de analfabetismo tbm tem maior razao
 de dependencia
 
 ## perc_oc_agro e tx_anaf
-Correlação entre essas variaveis foi no patamar de 0.74 tambem, indicando uma forte correlacao.
+Correlação entre essas variáveis foi no patamar de 0.74 tambem, indicando uma forte correlacao.
 Em outras palavras, o percentual de ocupados no setor agropecuario  demonstra grande influência
 em uma maior taxa de analfabetismo. Creio que isso tenha a ver com o fato do trabalho rural haver
 maior concentracao de mao de obra menos especializada.
 
 ## perc_ext_pob e tx_anaf
-Correlação entre essas variaveis demonstrou um valor de 0.79, ou seja, a taxa de analfabetismo tende
+Correlação entre essas variáveis demonstrou um valor de 0.79, ou seja, a taxa de analfabetismo tende
 a aumentar quando o percentual de pessoas em extrema pobreza aumenta.
 
 ## perc_ext_pob e raz_dep
-Outro par de variaveis que demonstrou altissima Correlação que um maior percentual de pessoas em extrema pobreza
+Outro par de variáveis que demonstrou altissima Correlação que um maior percentual de pessoas em extrema pobreza
 está associada a uma maior razão de dependencia.
 
 ## 2 - Correlações negativas:
@@ -242,7 +242,7 @@ Correlação de -0.8 demonstrando forte relacao, indicando que a medida que o pi
 pobreza tende a diminuir consideravelmente.
 
 ## perc_oc_comerc e perc_oc_agro
-Correlação negativamente moderada com -0.59, sao duas variaveis em sentidos opostos então ísso indica tbm na correlacao que percentual de ocupacao
+Correlação negativamente moderada com -0.59, sao duas variáveis em sentidos opostos então ísso indica tbm na correlacao que percentual de ocupacao
 no setor agropecuario tende a diminuir a medida que o percentual de ocupacao do setor comercial aumenta.
 
 ## esp_vida_nsc e perc_oc_agro
@@ -385,7 +385,7 @@ Um aumento de 1% na percentual de ocupação no setor agropecuário está associ
 um aumento de 1% na percentual de ocupação no setor de serviços está associado a um aumento de 0.239% na percentagem de extrema pobreza, mantendo outras variáveis constantes.
 
  
-# Variaveis nao significativas:
+# variáveis nao significativas:
 
 - esp_vida_nsc: -0.141, p > 0.1
 - perc_oc_comerc: 0.064, p > 0.1
