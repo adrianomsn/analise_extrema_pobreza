@@ -366,22 +366,22 @@ Note:               *p<0.1; **p<0.05; ***p<0.01
 
 # Variveis significativas:
 
-## 1 - População rural: 0.072, p < 0.01
+### 1 - População rural: 0.072, p < 0.01
 Um aumento de 1% na população rural está associado a um aumento de 0.072% na percentagem de extrema pobreza, mantendo outras variáveis constantes.
 
-## 2 - Razão de dependência: 0.823, p < 0.01
+### 2 - Razão de dependência: 0.823, p < 0.01
 Um aumento de 1% na razão de dependência está associado a um aumento de 0.823% na percentagem de extrema pobreza, mantendo outras variáveis constantes.
 
-## 3 - Taxa de Analfabetismo: 0.515, p < 0.01
+### 3 - Taxa de Analfabetismo: 0.515, p < 0.01
 Um aumento de 1% na taxa de analfabetismo está associado a um aumento de 0.515% na percentagem de extrema pobreza, mantendo outras variáveis constantes.
 
-## 4 - PIB per capita: -0.987, p < 0.01
+### 4 - PIB per capita: -0.987, p < 0.01
 Um aumento de 1% no PIB per capita está associado a uma diminuição de 0.987% na percentagem de extrema pobreza, mantendo outras variáveis constantes.
 
-## 5 - Percentual de ocupaçao no setor agropecuário: 0.194, p < 0.01
+### 5 - Percentual de ocupaçao no setor agropecuário: 0.194, p < 0.01
 Um aumento de 1% na percentual de ocupação no setor agropecuário está associado a um aumento de 0.194% na percentagem de extrema pobreza, mantendo outras variáveis constantes.
 
-## 6 - Percentual de ocupação no setor de serviços: 0.239, p < 0.01
+### 6 - Percentual de ocupação no setor de serviços: 0.239, p < 0.01
 um aumento de 1% na percentual de ocupação no setor de serviços está associado a um aumento de 0.239% na percentagem de extrema pobreza, mantendo outras variáveis constantes.
 
  
