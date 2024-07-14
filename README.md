@@ -35,8 +35,10 @@ Os dados oriundos do Censo de 2010 obtidos através do Atlas do Desenvolvimento 
 - FREQ_FUND = frequência escolar no ensino fundamental;
 - FREQ_MED = frequência escolar no ensino médio;
 - PIB_PC = PIB per capita;
-O subscrito i indica os 184 municípios cearenses.
-Ano referente às observações, onde t = 2010.
+
+  
+- O subscrito i indica os 184 municípios cearenses.
+- Ano referente às observações, onde t = 2010.
 
 # Análise Exploratória
 
