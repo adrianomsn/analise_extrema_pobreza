@@ -42,7 +42,7 @@ Ano referente às observações, onde t = 2010.
 
 ## Medidas de Tendência Central
 
-### - Média:
+### - Média por variáveis:
 ```
 - perc_oc_agro:    38.18
 - perc_oc_comerc:  11.43
@@ -57,28 +57,66 @@ Ano referente às observações, onde t = 2010.
 - pib_pc:          267.63
 - perc_ext_pob:    23.47
 ```
-### - Mediana:
 
 ### - Desvio Padrão:
 ```
 Variáveis com alto desvio padrão:
 
-pop_rural (8026.416192) e pib_pc (62.801544) têm desvios padrão elevados,
+pop_rural (8.026) e pib_pc (62.80) têm desvios padrão elevados,
 indicando alta variabilidade nos valores dessas variáveis.
 
 Variáveis com desvio padrão moderado:
 
-perc_oc_agro (12.653409), freq_pre_esc (16.782602), e freq_med (10.671560)
+perc_oc_agro (12.65), freq_pre_esc (16.78), e freq_med (10.67)
 apresentam desvios padrão moderados, sugerindo variação considerável, mas não extrema.
 
 Variáveis com baixo desvio padrão:
 
-perc_oc_comerc (3.375366), perc_oc_serv (5.523187), esp_vida_nsc (1.288314),
-raz_dep (5.305458), tx_anaf (5.342230), freq_fund (4.869921), e perc_ext_pob (8.659658) têm desvios padrão menores,
+perc_oc_comerc (3.37, perc_oc_serv (5.5), esp_vida_nsc (1.28),
+raz_dep (5.3), tx_anaf (5.3), freq_fund (4.8), e perc_ext_pob (8.69) têm desvios padrão menores,
 indicando menor variação nos valores dessas variáveis.
+
 ```
 ### Quartis:
+```
+1º e 3º Quartil:
 
+- pop_rural:       11570.44
+ Q1 = 5948, temos 25% dos municípios com população rural abaixo desse valor;
+ Q3 = 14556, temos 25% dos municípios com população rural acima desse valor.
+ ou seja, metade dos municípios cearenses em 2010 tinha população rural entre 5948 a 14556 pessoas.
+
+- raz_dep:
+ Q1 = 52.9, temos 25% dos municípios com razão de dependência abaixo desse valor;
+ Q3 = 60.3, temos 25% dos municípios com razão de dependência acima desse valor.
+ ou seja, metade dos municípios cearenses em 2010 tinha razão de dependência entre 52% a 60%. Questão essa que pode influênciar diretamente a extrema pobreza, vale notar que seria basicamente para cada 100 trabalhadores ativos
+ haveria pelo menos 50 a 60 pessoas dependentes.
+
+- tx_anaf:
+ Q1 = 24.2, temos 25% dos municípios com taxa de analfabetismo abaixo desse valor;
+ Q3 = 30.5, temos 25% dos municípios com taxa de analfabetismo acima desse valor.
+ ou seja, metade dos municípios cearenses em 2010 tinha taxas de analfabetismo entre 24 a 30%.
+
+- pib_pc:          267.63
+ Q1 = R$ 221, temos 25% dos municípios com PIB per capita abaixo desse valor;
+ Q3 = R$ 287, temos 25% dos municípios com PIB per capita acima desse valor.
+ ou seja, metade dos municípios cearenses em 2010 tinha PIB per capita entre 221 a 287 reais. Recobrando dados de salário em 2010, esse valor equivale a metade de um salário mínimo naquele ano.
+
+- perc_ext_pob:    23.47
+ Q1 = 17.6, temos 25% dos municpios com percentual de pessoas em extrema pobreza abaixo desse valor;
+ Q3 = 30.1, temos 25% dos municpios com percentual de pessoas em extrema pobreza acima desse valor.
+ ou seja, metade dos municípios cearenses em 2010 tinha um percentual de pessoas em extrema pobreza de 17,6% a 30.1%.
+
+- exp_vida_nsc:    23.47
+ Q1 = 69.8, temos 25% dos municpios com expectiva de vida ao nascer abaixo desse valor;
+ Q3 = 71.5, temos 25% dos municpios com expectiva de vida ao nascer acima desse valor.
+ ou seja, pelo menos 75% dos municípios cearenses em 2010 tinham expectativa de vida ao nascer superior a 69.8 anos.
+
+### Resumo geral:
+Em outras palavras 75% dos municípios cearenses em 2010 sobreviviam com cerca de metade de um salário mínimo ou menos, com altissíma razão de dependência, taxa de analfabetismo pelo menos 2 vezes maior que a média brasileira para a época, 
+alto percentual de pessoas em extrema pobreza e expectativa de vida superior a 69.8 anos.
+
+```
 ## Outliers
 
 ### Resumo dos resultados:
@@ -86,11 +124,24 @@ indicando menor variação nos valores dessas variáveis.
 Com p-valor menor que 0,05, rejeita-se a hipótese nula. Portanto, são de fato outliers:
 ```
 - perc_oc_comerc: 27.38
+Valor este referente ao município de Juazeiro do Norte com alto percentual de ocupação no setor de comércio.
+
 - perc_oc_serv: 51.55
+Valor este referente ao município de Fortaleza (Capital) com alto percentual de ocupação no setor de comércio.
+
 - pop_rural: 49156
+Valor este referente ao município de Itapipoca com alta quantidade da população em zona rural.
+
 - tx_anaf: 6.94
+Valor este referente ao município de Fortaleza (Capital) com baixissíma taxa de analfabetismo.
+
 - freq_fund: 136.07
+Valor este referente ao município de Tabuleiro do Norte com altissímop valor de frequência escolar no fundamental.
+
 - pib_pc: 846.36
+Valor este referente ao município de Fortaleza (Capital) com alto valor do PIB per capita.
+_obs: Fortaleza foi considerado outlier impactante e portanto removido da amostra_
+
 ```
 
 ## Distribuição das variáveis
