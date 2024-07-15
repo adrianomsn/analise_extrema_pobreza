@@ -83,7 +83,7 @@ indicando menor variação nos valores dessas variáveis.
 ```
 1º e 3º Quartil:
 
-- pop_rural:       11570.44
+- pop_rural:       
  Q1 = 5948, temos 25% dos municípios com população rural abaixo desse valor;
  Q3 = 14556, temos 25% dos municípios com população rural acima desse valor.
  ou seja, metade dos municípios cearenses em 2010 tinham população rural entre 5.948 a 14.556 pessoas.
@@ -99,17 +99,17 @@ indicando menor variação nos valores dessas variáveis.
  Q3 = 30.5, temos 25% dos municípios com taxa de analfabetismo acima desse valor.
  ou seja, metade dos municípios cearenses em 2010 demonstravam taxas de analfabetismo entre 24 a 30%.
 
-- pib_pc:          267.63
+- pib_pc:        
  Q1 = R$ 221, temos 25% dos municípios com PIB per capita abaixo desse valor;
  Q3 = R$ 287, temos 25% dos municípios com PIB per capita acima desse valor.
  ou seja, metade dos municípios cearenses em 2010 tinham PIB per capita entre 221 a 287 reais. Recobrando dados de salário em 2010, esse valor equivale a metade de um salário mínimo naquele ano.
 
-- perc_ext_pob:    23.47
+- perc_ext_pob:  
  Q1 = 17.6, temos 25% dos municpios com percentual de pessoas em extrema pobreza abaixo desse valor;
  Q3 = 30.1, temos 25% dos municpios com percentual de pessoas em extrema pobreza acima desse valor.
  ou seja, metade dos municípios cearenses em 2010 demonstraram um percentual de pessoas em extrema pobreza de 17,6% a 30.1%.
 
-- exp_vida_nsc:    23.47
+- exp_vida_nsc:   
  Q1 = 69.8, temos 25% dos municpios com expectiva de vida ao nascer abaixo desse valor;
  Q3 = 71.5, temos 25% dos municpios com expectiva de vida ao nascer acima desse valor.
  ou seja, pelo menos 75% dos municípios cearenses em 2010 tinham expectativa de vida ao nascer superior a 69.8 anos.
@@ -123,7 +123,7 @@ alto percentual de pessoas em extrema pobreza e expectativa de vida superior a 6
 
 ### Resumo dos resultados:
 
-Com p-valor menor que 0,05, rejeita-se a hipótese nula. Portanto, são de fato outliers:
+Com p-valor menor que 0.05, rejeita-se a hipótese nula. Portanto, são de fato outliers:
 ```
 - perc_oc_comerc: 27.38
 Valor este referente ao município de Juazeiro do Norte com alto percentual de ocupação no setor de comércio.
