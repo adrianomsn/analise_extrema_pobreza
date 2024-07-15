@@ -21,6 +21,9 @@ Entender se há e como ocorre o fenômeno da extrema pobreza no nordeste brasile
 
 Os dados são oriundos do Censo de 2010 obtidos através do Atlas do Desenvolvimento Humano no Brasil e as observações consistem todos os municípios do estado do Ceará que contém população rural. O modelo utilizado foi uma regressão linear multiplica (log-log), além da análise descritiva dos dados, análise de premissa e dos resultados da regressão..
 
+### Representação matemática do modelo de regressão:
+![image](https://github.com/user-attachments/assets/b9f798cb-e5e1-4a28-8965-04687db7e2b3)
+
 
 ## Resumo das variáveis:
 
