@@ -2,14 +2,15 @@
 
 # INTRODUÇÃO
 
-Na economia o tema pobreza é discutido incansavelmente, dada sua importância e relevânte influência no bem-estar social de uma população. Nos cenários onde os pesquisadores buscam entender o fenômeno da pobreza e como ocorre em uma determinada região, é necesssário abarcar indicadores que simulem a realidade do contexto inserido desses povos. Tendo em vista isso essa análise faz uso dos dados referentes a população de 184 municípios do estado do Ceará. A análise busca entender as condições da pobreza espacial da região. A análise consistiu no uso de inferência econométrica com modelo de regressão linear multipla, além de testes análisando a violação de premissas do modelo, com testes de multicolinearidade, heterocedasticidade, normalidade de resíduos e autocorrelação entre as variáveis. Da experiência internacional é consenso a realidade da pobreza no Brasil, tendo vista o grau de desenvolvimento emergente do país (IPECE, 2010).
-Para estabelecer o conceito de pobreza, Sen (1976) observou que a sua construção requer a solução de dois problemas:
+Na economia, o tema pobreza é discutido extensivamente, dada sua importância e relevante influência no bem-estar social de uma população. Nos cenários onde os pesquisadores buscam entender o fenômeno da pobreza e como ocorre em uma determinada região, é necessário abarcar indicadores que simulem a realidade do contexto desses povos. Tendo em vista isso, esta análise faz uso dos dados referentes à população de 184 municípios do estado do Ceará. A análise busca entender as condições da extrema pobreza da região. A análise consistiu no uso de inferência econométrica com modelo de regressão linear, medidas de tendência central, correlações, além de testes diagnósticos, analisando a violação de premissas do modelo e outros fundamentos estatísticos essenciais.
+
+Da experiência internacional, é consenso a realidade da pobreza no Brasil, tendo em vista o grau de desenvolvimento emergente do país (IPECE, 2010). Para estabelecer o conceito de pobreza, Sen (1976) observou que a sua construção requer a solução de dois problemas:
  
  i) Identificar o conjunto da população de pessoas em estado de pobreza;
  
  ii) Agregar características dessa população em um indicador (ou índice) de pobreza.
 
-Existem diversos estudos acerca da caracterização multifacetada da pobreza, evidenciando que ela não se resume a apenas pela má distribuição de renda. Essa análise busca por meio dessas ideias  analisar se caracteristicas como a taxa de analfabetismo, renda per capita, a população rural e a taxa de dependência tem imapcto significativo no grau de extrema pobreza no Ceará para o ano de 2010.
+Existem diversos estudos acerca da caracterização multifacetada da pobreza, evidenciando que ela não se resume a apenas pela má distribuição de renda. Essa análise busca por meio dessas ideias  analisar se características como a taxa de analfabetismo, renda per capita, a população rural, percentual de ocupação entre os setores econômicos, frequência escolar em todas as etapas, taxa de dependência poderiam ter impacto significativo no grau de extrema pobreza no Ceará.
 
 # OBJETIVOS
 
@@ -18,7 +19,7 @@ Entender se há e como ocorre o fenômeno da extrema pobreza no nordeste brasile
 
 # METODOLOGIA
 
-Os dados oriundos do Censo de 2010 obtidos através do Atlas do Desenvolvimento Humano no Brasil e as observações consistem todos os municípios do estado do Ceará que contém população rural. O modelo utilizado foi uma regressão linear multiplica (log-log), além da análise descritiva dos dados, análise de premissa e dos resultados da regressão..
+Os dados são oriundos do Censo de 2010 obtidos através do Atlas do Desenvolvimento Humano no Brasil e as observações consistem todos os municípios do estado do Ceará que contém população rural. O modelo utilizado foi uma regressão linear multiplica (log-log), além da análise descritiva dos dados, análise de premissa e dos resultados da regressão..
 
 
 ## Resumo das variáveis:
