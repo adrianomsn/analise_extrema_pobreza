@@ -79,7 +79,7 @@ raz_dep (5.3), tx_anaf (5.3), freq_fund (4.8), e perc_ext_pob (8.69) têm desvio
 indicando menor variação nos valores dessas variáveis.
 
 ```
-### Quartis:
+### - Quartis:
 ```
 1º e 3º Quartil:
 
@@ -119,7 +119,7 @@ Em outras palavras 75% dos municípios cearenses em 2010 sobreviviam com cerca d
 alto percentual de pessoas em extrema pobreza e expectativa de vida superior a 69.8 anos.
 
 ```
-## Outliers
+## - Outliers
 
 ### Resumo dos resultados:
 
