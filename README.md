@@ -89,25 +89,25 @@ indicando menor variação nos valores dessas variáveis.
  ou seja, metade dos municípios cearenses em 2010 tinham população rural entre 5.948 a 14.556 pessoas.
 
 - raz_dep:
- Q1 = 52.9, temos 25% dos municípios com razão de dependência abaixo desse valor;
+ Q1 = 53, temos 25% dos municípios com razão de dependência abaixo desse valor;
  Q3 = 60.3, temos 25% dos municípios com razão de dependência acima desse valor.
- ou seja, metade dos municípios cearenses em 2010 tinha razão de dependência entre 52% a 60%. Variável de possível impacto relevante na perpetuação da pobreza, para cada 100 trabalhadores ativos
- haveria pelo menos 50 a 60 pessoas dependentes.
+ ou seja, metade dos municípios cearenses em 2010 demonstravam razão de dependência entre 53 a 60. Variável de possível impacto relevante na perpetuação da pobreza, para cada 100 trabalhadores ativos
+ haveria pelo menos 53 a 60 pessoas dependentes.
 
 - tx_anaf:
  Q1 = 24.2, temos 25% dos municípios com taxa de analfabetismo abaixo desse valor;
  Q3 = 30.5, temos 25% dos municípios com taxa de analfabetismo acima desse valor.
- ou seja, metade dos municípios cearenses em 2010 tinha taxas de analfabetismo entre 24 a 30%.
+ ou seja, metade dos municípios cearenses em 2010 demonstravam taxas de analfabetismo entre 24 a 30%.
 
 - pib_pc:          267.63
  Q1 = R$ 221, temos 25% dos municípios com PIB per capita abaixo desse valor;
  Q3 = R$ 287, temos 25% dos municípios com PIB per capita acima desse valor.
- ou seja, metade dos municípios cearenses em 2010 tinha PIB per capita entre 221 a 287 reais. Recobrando dados de salário em 2010, esse valor equivale a metade de um salário mínimo naquele ano.
+ ou seja, metade dos municípios cearenses em 2010 tinham PIB per capita entre 221 a 287 reais. Recobrando dados de salário em 2010, esse valor equivale a metade de um salário mínimo naquele ano.
 
 - perc_ext_pob:    23.47
  Q1 = 17.6, temos 25% dos municpios com percentual de pessoas em extrema pobreza abaixo desse valor;
  Q3 = 30.1, temos 25% dos municpios com percentual de pessoas em extrema pobreza acima desse valor.
- ou seja, metade dos municípios cearenses em 2010 tinha um percentual de pessoas em extrema pobreza de 17,6% a 30.1%.
+ ou seja, metade dos municípios cearenses em 2010 demonstraram um percentual de pessoas em extrema pobreza de 17,6% a 30.1%.
 
 - exp_vida_nsc:    23.47
  Q1 = 69.8, temos 25% dos municpios com expectiva de vida ao nascer abaixo desse valor;
