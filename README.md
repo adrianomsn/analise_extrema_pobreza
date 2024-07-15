@@ -86,12 +86,12 @@ indicando menor variação nos valores dessas variáveis.
 - pop_rural:       11570.44
  Q1 = 5948, temos 25% dos municípios com população rural abaixo desse valor;
  Q3 = 14556, temos 25% dos municípios com população rural acima desse valor.
- ou seja, metade dos municípios cearenses em 2010 tinha população rural entre 5948 a 14556 pessoas.
+ ou seja, metade dos municípios cearenses em 2010 tinham população rural entre 5.948 a 14.556 pessoas.
 
 - raz_dep:
  Q1 = 52.9, temos 25% dos municípios com razão de dependência abaixo desse valor;
  Q3 = 60.3, temos 25% dos municípios com razão de dependência acima desse valor.
- ou seja, metade dos municípios cearenses em 2010 tinha razão de dependência entre 52% a 60%. Questão essa que pode influênciar diretamente a extrema pobreza, vale notar que seria basicamente para cada 100 trabalhadores ativos
+ ou seja, metade dos municípios cearenses em 2010 tinha razão de dependência entre 52% a 60%. Variável de possível impacto relevante na perpetuação da pobreza, para cada 100 trabalhadores ativos
  haveria pelo menos 50 a 60 pessoas dependentes.
 
 - tx_anaf:
