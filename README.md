@@ -288,19 +288,19 @@ de dados. Remoção essa que melhorou a acurária do modelo levemente.
 ```
 shapiro.test(residuals(model_ext))
 ```
-p-valor > 0.05 portanto nao rejeitamos a hipotese nula de normalidade da distruicao
+p-valor > 0.05 portanto não rejeitamos a hipotese nula de normalidade da distruicao
 
 ## Teste de Heterocedasticidade
 ```
 bptest(model_ext)
 ```
-p-valor > 0.05 portanto nao reijeitamos a hipotese nula de homocedasticidade ( variancia constante )
+p-valor > 0.05 portanto não reijeitamos a hipotese nula de homocedasticidade ( variancia constante )
 
 ## Teste de Autocorrelação
 ```
 dwtest(model_ext)
 ```
-p-valor > 0.05 portanto nao rejeitamos a hipotese nula de que nao ha autocorrelação.
+p-valor > 0.05 portanto não rejeitamos a hipotese nula de que não ha autocorrelação.
 
 ## Teste de multicolinearidade
 ```
@@ -308,7 +308,7 @@ vid_lm <- vif(model_ext)
 print(vid_lm)
 ```
 Analisando os resultados do VIF podemos notar que todos os resultados sao abaixos de 5, ou seja,
-muito inferiores a 10. Portanto, nao temos problema com multicolinearidade no modelo.
+muito inferiores a 10. Portanto, não temos problema com multicolinearidade no modelo.
 
 # RESULTADOS
 
@@ -379,7 +379,7 @@ Note:               *p<0.1; **p<0.05; ***p<0.01
 
 ## Resultado das variáveis explicativas individualmente em relação a variavel dependente
 
-# Variveis significativas:
+# Variáveis significativas:
 
 ### 1 - População rural: 0.072, p < 0.01
 Um aumento de 1% na população rural está associado a um aumento de 0.072% na percentagem de extrema pobreza, mantendo outras variáveis constantes.
@@ -400,7 +400,7 @@ Um aumento de 1% na percentual de ocupação no setor agropecuário está associ
 um aumento de 1% na percentual de ocupação no setor de serviços está associado a um aumento de 0.239% na percentagem de extrema pobreza, mantendo outras variáveis constantes.
 
  
-# variáveis nao significativas:
+# variáveis não significativas:
 
 - esp_vida_nsc: -0.141, p > 0.1
 - perc_oc_comerc: 0.064, p > 0.1
@@ -409,7 +409,7 @@ um aumento de 1% na percentual de ocupação no setor de serviços está associa
 - freq_med: -0.011, p > 0.1
 - intercepto: 2.388, p > 0.1
 
-Todas as variáveis acima nao tiveram efeito significativo no percentual de pessoas em extrema pobreza.
+Todas as variáveis acima não tiveram efeito significativo no percentual de pessoas em extrema pobreza.
 
 
 ## Interpretação geral:
@@ -434,7 +434,7 @@ Alguns direcionamentos que podemos inferir é a necessidade de politicas rurais 
 entre populaçao rural e o percentual de pessoas em extrema pobreza, políticas focadas nesse grupo podem trazer melhorias de bem estar
 no campo, tendo em vista a diminuicao da extrema pobreza nos municipios do estado do ceará. No entanto, quando falamos sobre educação
 foi possivel notar a extrema necessidade da boas taxas de alfabetizacao podendo ter efeitos muito positivos sobre o percentual de pessoas
-em extrema pobreza, mas é interessante ressaltar que apenas a presença alta em todas as etapas estudantis nao demonstraram ter nenhuma
+em extrema pobreza, mas é interessante ressaltar que apenas a presença alta em todas as etapas estudantis não demonstraram ter nenhuma
 efeito significativo na redução da extrema pobreza, o que pode indicar por um lado onde a qualidade da educação ofertada e a  oferta de oportunidade
 de educação  e manuntencao de boas taxas alfabetizacao possam surtir efeitos positivos na redução da extrema pobreza. Em relação ao desenvolvimento
 econômico podemos evidenciar o forte impacto do crescimento econômico e aumento do pib per capita na redução da extrema pobreza, mas claro tambem
