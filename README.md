@@ -400,7 +400,7 @@ Um aumento de 1% na percentual de ocupação no setor agropecuário está associ
 um aumento de 1% na percentual de ocupação no setor de serviços está associado a um aumento de 0.239% na percentagem de extrema pobreza, mantendo outras variáveis constantes.
 
  
-# variáveis não significativas:
+# Variáveis não significativas:
 
 - esp_vida_nsc: -0.141, p > 0.1
 - perc_oc_comerc: 0.064, p > 0.1
