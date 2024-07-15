@@ -215,50 +215,65 @@ A densidade diminui dos dois lados do pico.
 
 ## 1 - Correlações positivas:
 
-## tx_anaf e raz_dep
-Correlação entre as duas variáveis no patamar de 0.74, indicando assim uma forte correlacao.
+### tx_anaf e raz_dep
+```
+Correlação entre as duas variáveis no patamar de 0.74, indicando assim uma forte correlação.
 Em outras palavras, a medida que a taxa de analfabetismo aumenta, a razao de dependência
 tambem tende a aumentar. então municipios e regioes com maiores taxas de analfabetismo tbm tem maior razao
-de dependencia
+de dependência.
+```
 
-## perc_oc_agro e tx_anaf
-Correlação entre essas variáveis foi no patamar de 0.74 tambem, indicando uma forte correlacao.
+### perc_oc_agro e tx_anaf
+```
+Correlação entre essas variáveis foi no patamar de 0.74 tambem, indicando uma forte correlação.
 Em outras palavras, o percentual de ocupados no setor agropecuario  demonstra grande influência
 em uma maior taxa de analfabetismo. Creio que isso tenha a ver com o fato do trabalho rural haver
-maior concentracao de mao de obra menos especializada.
-
-## perc_ext_pob e tx_anaf
+maior concentração de mão de obra menos especializada.
+```
+### perc_ext_pob e tx_anaf
+```
 Correlação entre essas variáveis demonstrou um valor de 0.79, ou seja, a taxa de analfabetismo tende
 a aumentar quando o percentual de pessoas em extrema pobreza aumenta.
-
-## perc_ext_pob e raz_dep
+```
+### perc_ext_pob e raz_dep
+```
 Outro par de variáveis que demonstrou altissima Correlação que um maior percentual de pessoas em extrema pobreza
-está associada a uma maior razão de dependencia.
+está associada a uma maior razão de dependência.
+```
 
 ## 2 - Correlações negativas:
 
-## perc_ext_pob e pib_pc
-Correlação de -0.8 demonstrando forte relacao, indicando que a medida que o pib per capita aumenta o percentual de pessoas em extrema
+### perc_ext_pob e pib_pc
+```
+Correlação de -0.8 demonstrando forte relação, indicando que a medida que o pib per capita aumenta o percentual de pessoas em extrema
 pobreza tende a diminuir consideravelmente.
-
-## perc_oc_comerc e perc_oc_agro
-Correlação negativamente moderada com -0.59, sao duas variáveis em sentidos opostos então ísso indica tbm na correlacao que percentual de ocupacao
+```
+### perc_oc_comerc e perc_oc_agro
+```
+Correlação negativamente moderada com -0.59, sao duas variáveis em sentidos opostos então ísso indica tbm na correlação que percentual de ocupacao
 no setor agropecuario tende a diminuir a medida que o percentual de ocupacao do setor comercial aumenta.
-
-## esp_vida_nsc e perc_oc_agro
-Correlação negativa moderada de -0.44, indicando que ha uma relacao inversa, ou seja, a esperanca de vida ao nascer tende a aumentar com
+```
+### esp_vida_nsc e perc_oc_agro
+```
+Correlação negativa moderada de -0.44, indicando que ha uma relação inversa, ou seja, a esperança de vida ao nascer tende a aumentar com
 um menor percentual de ocupacao no setor agropecuario. Ou seja, pode denotar que regioes mais dependende do setor agropecuario tendem a ter
-menos esperanca de vida ao nascer nos municipios cearenses.
-
-## pib_pc e raz_dep
+menos esperança de vida ao nascer nos municipios cearenses.
+```
+### pib_pc e raz_dep
+```
 Correlação negativa moderadamente forte de -0.65, indicando que a razao de dependência diminui a medida que o pib per capita aumenta.
+```
 
-## pib_pc e tx_anaf
+### pib_pc e tx_anaf
+```
 Correlação negativa moderadamente forte de -0.73, indicativo que a medida que pib per capita aumenta a taxa de analfabetismo diminui.
+```
 
-# tx_anaf e esp_vida_nsc
-Correlação negativa relativamente forte de -0.47, denotando uma possivel relacao. Onde, municipios com maiores taxas de analfabetismo
-tendem a ter menor esperanca de vida ao nascer.
+### tx_anaf e esp_vida_nsc
+```
+Correlação negativa relativamente forte de -0.47, denotando uma possivel relação. Onde, municipios com maiores taxas de analfabetismo
+tendem a ter menor esperança de vida ao nascer.
+```
 
 # Testes Estatísticos de Diagnóstico
 
@@ -285,7 +300,7 @@ p-valor > 0.05 portanto nao reijeitamos a hipotese nula de homocedasticidade ( v
 ```
 dwtest(model_ext)
 ```
-p-valor > 0.05 portanto nao rejeitamos a hipotese nula de que nao ha autocorrelacao.
+p-valor > 0.05 portanto nao rejeitamos a hipotese nula de que nao ha autocorrelação.
 
 ## Teste de multicolinearidade
 ```
@@ -362,7 +377,7 @@ Note:               *p<0.1; **p<0.05; ***p<0.01
 
 #   Interpretação dos resultados do modelo 
 
-## Resultado das variáveis explicativas individualmente em relacao a variavel dependente
+## Resultado das variáveis explicativas individualmente em relação a variavel dependente
 
 # Variveis significativas:
 
@@ -421,7 +436,7 @@ no campo, tendo em vista a diminuicao da extrema pobreza nos municipios do estad
 foi possivel notar a extrema necessidade da boas taxas de alfabetizacao podendo ter efeitos muito positivos sobre o percentual de pessoas
 em extrema pobreza, mas é interessante ressaltar que apenas a presença alta em todas as etapas estudantis nao demonstraram ter nenhuma
 efeito significativo na redução da extrema pobreza, o que pode indicar por um lado onde a qualidade da educação ofertada e a  oferta de oportunidade
-de educação  e manuntencao de boas taxas alfabetizacao possam surtir efeitos positivos na redução da extrema pobreza. Em relacao ao desenvolvimento
+de educação  e manuntencao de boas taxas alfabetizacao possam surtir efeitos positivos na redução da extrema pobreza. Em relação ao desenvolvimento
 econômico podemos evidenciar o forte impacto do crescimento econômico e aumento do pib per capita na redução da extrema pobreza, mas claro tambem
 dando mesma importancia na distribuicao mais equitaria dos recursos gerados em excedente. Acerca dos setores de emprego analisados demonstrou uma necessidade
 da geracao de empregos de qualidade e foco em empregabilidade formal, dado que possa ocorrer o contrario no campo e regioes mais ruralizadas e menos populosas,
